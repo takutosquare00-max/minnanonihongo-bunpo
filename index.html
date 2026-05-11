@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>みんなの日本語 文法一覧</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  padding-top: max(20px, env(safe-area-inset-top));
+}
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+.unit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 600px) {
+  .unit-grid { grid-template-columns: 1fr; }
+}
+.level {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+.level summary {
+  font-size: 1.15em;
+  font-weight: bold;
+  padding: 16px;
+  cursor: pointer;
+  list-style: none;
+  border-bottom: 2px solid #e8eef5;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #2c5282;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.level summary::-webkit-details-marker { display: none; }
+.level summary::before {
+  content: '▼';
+  display: inline-block;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.level[open] summary::before { transform: rotate(-90deg); }
+.unit-title { flex-shrink: 0; }
+.unit-topic {
+  font-size: 0.72em;
+  font-weight: normal;
+  color: #718096;
+  letter-spacing: 0.01em;
+}
+.level-content { padding: 16px; }
+.level-content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+  align-items: flex-start;
+}
+.level-content-row > .sub-section {
+  flex: 1 1 240px;
+  margin-bottom: 0;
+  min-width: 0;
+}
+.sub-section { margin-bottom: 16px; }
+.sub-section:last-child { margin-bottom: 0; }
+.sub-section-title {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.icon-row .icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 68px;
+  min-height: 64px;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  background: #2b6cb0;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05em;
+  box-shadow: 0 2px 8px rgba(43, 108, 176, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  line-height: 1.2;
+}
+.icon-row .icon-link:active { transform: scale(0.96); }
+.icon-row .icon-link:hover { box-shadow: 0 4px 12px rgba(43, 108, 176, 0.45); }
+.icon-link.icon-link-purple {
+  background: linear-gradient(135deg, #6b46c1 0%, #553c9a 100%);
+  box-shadow: 0 2px 8px rgba(107, 70, 193, 0.35);
+  font-size: 0.95em;
+}
+.icon-link.icon-link-purple:hover { box-shadow: 0 4px 12px rgba(107, 70, 193, 0.45); }
+.icon-link.icon-link-orange {
+  background: linear-gradient(135deg, #dd6b20 0%, #c05621 100%);
+  box-shadow: 0 2px 8px rgba(221, 107, 32, 0.35);
+  font-size: 0.95em;
+}
+.icon-link.icon-link-orange:hover { box-shadow: 0 4px 12px rgba(221, 107, 32, 0.45); }
+.bunpo-label {
+  font-size: 0.7em;
+  font-weight: 500;
+  margin-top: 4px;
+  opacity: 0.95;
+}
+.icon-link .icon-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+</style>
+</head>
+<body>
+<h1>みんなの日本語 文法一覧</h1>
+
+<div class="unit-grid">
+<details class="level" open>
+  <summary><span class="unit-title">第21課</span><span class="unit-topic">普通体と思います、〜と言います、〜でしょう？、場所でNがあります、機会で、Nでも、〜ないと……</span></summary>
+  <div class="level-content level-content-row">
+    <div class="sub-section">
+      <div class="sub-section-title">1回目（前半）</div>
+      <div class="icon-row">
+        <a href="unit21/bunpo01-to-omoimasu.html" class="icon-link"><div class="icon-stack"><span>①</span><span class="bunpo-label">と思います</span></div></a>
+        <a href="unit21/bunpo02-to-iimasu.html" class="icon-link"><div class="icon-stack"><span>②</span><span class="bunpo-label">と言います</span></div></a>
+        <a href="unit21/bunpo03-deshou.html" class="icon-link"><div class="icon-stack"><span>③</span><span class="bunpo-label">でしょう？</span></div></a>
+        <a href="unit21/bunpo-matome1.html" class="icon-link icon-link-purple">まとめ1</a>
+      </div>
+    </div>
+    <div class="sub-section">
+      <div class="sub-section-title">2回目（後半）</div>
+      <div class="icon-row">
+        <a href="unit21/bunpo-quickreview1.html" class="icon-link icon-link-orange">復習</a>
+        <a href="unit21/bunpo04-de-arimasu.html" class="icon-link"><div class="icon-stack"><span>④</span><span class="bunpo-label">場所でN</span></div></a>
+        <a href="unit21/bunpo05-occasion-de.html" class="icon-link"><div class="icon-stack"><span>⑤</span><span class="bunpo-label">機会で</span></div></a>
+        <a href="unit21/bunpo06-demo.html" class="icon-link"><div class="icon-stack"><span>⑥</span><span class="bunpo-label">Nでも</span></div></a>
+        <a href="unit21/bunpo07-naito.html" class="icon-link"><div class="icon-stack"><span>⑦</span><span class="bunpo-label">ないと…</span></div></a>
+        <a href="unit21/bunpo-matome2.html" class="icon-link icon-link-purple">まとめ2</a>
+      </div>
+    </div>
+  </div>
+</details>
+
+</div>
+
+</body>
+</html>
